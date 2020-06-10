@@ -45,7 +45,7 @@ services:
     deploy:
       placement:
         constraints: [node.role == manager]
-    command: redis-server --appendonly yes
+    command: redis-server --appendonly yes #prepare appendonly.aof file which save number of visits on site
     networks:
       - webnet    
 networks:
